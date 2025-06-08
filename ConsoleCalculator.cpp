@@ -9,10 +9,11 @@ int main(){
     double num1;
     double num2;
     double result;
+    char cont;
 
     std::cout << "********* CALCULATOR *********\n";
 
-    std::cout << "Enter First Number: " << '\n';
+    do{std::cout << "Enter First Number: " << '\n';
     std::cin >> num1;
 
     std::cout << "Enter operation (+ - * /): " << '\n';
@@ -25,24 +26,34 @@ int main(){
         case '+':
             result = num1 + num2;
             std::cout << "Result: " << result << '\n';
+            std::cout << "Do you want to continue?(Y/N): " << '\n';
+            std::cin >> cont;
             break;
         case '-':
             result = num1 - num2;
             std::cout << "Result: " << result << '\n';
+            std::cout << "Do you want to continue?(Y/N): " << '\n';
+            std::cin >> cont;
             break;
         case '/':
             result = num1 / num2;
             std::cout << "Result: " << result << '\n';
+            std::cout << "Do you want to continue?(Y/N): " << '\n';
+            std::cin >> cont;
             break;
         case '*':
             result = num1 * num2;
             std::cout << "Result: " << result << '\n';
+            std::cout << "Do you want to continue?(Y/N): " << '\n';
+            std::cin >> cont;
             break;
         default:
             std::cout << "There was an invalid operator." << '\n';
+            std::cout << "Do you want to continue?(Y/N): " << '\n';
+            std::cin >> cont;
             break;
 
-    }
+    }} while(cont == 'Y' || cont == 'y');
 
     std::cout << "******************************\n";
 
