@@ -57,8 +57,5 @@ int main(){
 
     std::cout << "******************************\n";
 
-
-    system("pause");
-
     return 0;
 }
