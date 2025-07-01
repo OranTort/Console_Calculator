@@ -28,32 +28,37 @@ int main(){
             std::cout << "Result: " << result << '\n';
             std::cout << "Do you want to continue?(Y/N): " << '\n';
             std::cin >> cont;
+            cont = toupper(cont);
             break;
         case '-':
             result = num1 - num2;
             std::cout << "Result: " << result << '\n';
             std::cout << "Do you want to continue?(Y/N): " << '\n';
             std::cin >> cont;
+            cont = toupper(cont);
             break;
         case '/':
             result = num1 / num2;
             std::cout << "Result: " << result << '\n';
             std::cout << "Do you want to continue?(Y/N): " << '\n';
             std::cin >> cont;
+            cont = toupper(cont);
             break;
         case '*':
             result = num1 * num2;
             std::cout << "Result: " << result << '\n';
             std::cout << "Do you want to continue?(Y/N): " << '\n';
             std::cin >> cont;
+            cont = toupper(cont);
             break;
         default:
             std::cout << "There was an invalid operator." << '\n';
             std::cout << "Do you want to continue?(Y/N): " << '\n';
             std::cin >> cont;
+            cont = toupper(cont);
             break;
 
-    }} while(cont == 'Y' || cont == 'y');
+    }} while(cont == 'Y');
 
     std::cout << "******************************\n";
 
