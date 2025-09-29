@@ -2,6 +2,8 @@
 #include <vector>
 #include <cmath>
 
+using namespace std;
+
 
 int main(){
 
@@ -11,56 +13,56 @@ int main(){
     double result;
     char cont;
 
-    std::cout << "********* CALCULATOR *********\n";
+    cout << "********* CALCULATOR *********\n";
 
-    do{std::cout << "Enter First Number: " << '\n';
-    std::cin >> num1;
+    do{cout << "Enter First Number: " << '\n';
+    cin >> num1;
 
-    std::cout << "Enter operation (+ - * /): " << '\n';
-    std::cin >> op;
+    cout << "Enter operation (+ - * /): " << '\n';
+    cin >> op;
 
-    std::cout << "Enter Second Number: " << '\n';
-    std::cin >> num2;
+    cout << "Enter Second Number: " << '\n';
+    cin >> num2;
 
     switch(op){
         case '+':
             result = num1 + num2;
-            std::cout << "Result: " << result << '\n';
-            std::cout << "Do you want to continue?(Y/N): " << '\n';
-            std::cin >> cont;
+            cout << "Result: " << result << '\n';
+            cout << "Do you want to continue?(Y/N): " << '\n';
+            cin >> cont;
             cont = toupper(cont);
             break;
         case '-':
             result = num1 - num2;
-            std::cout << "Result: " << result << '\n';
-            std::cout << "Do you want to continue?(Y/N): " << '\n';
-            std::cin >> cont;
+            cout << "Result: " << result << '\n';
+            cout << "Do you want to continue?(Y/N): " << '\n';
+            cin >> cont;
             cont = toupper(cont);
             break;
         case '/':
             result = num1 / num2;
-            std::cout << "Result: " << result << '\n';
-            std::cout << "Do you want to continue?(Y/N): " << '\n';
-            std::cin >> cont;
+            cout << "Result: " << result << '\n';
+            cout << "Do you want to continue?(Y/N): " << '\n';
+            cin >> cont;
             cont = toupper(cont);
             break;
         case '*':
             result = num1 * num2;
-            std::cout << "Result: " << result << '\n';
-            std::cout << "Do you want to continue?(Y/N): " << '\n';
-            std::cin >> cont;
+            cout << "Result: " << result << '\n';
+            cout << "Do you want to continue?(Y/N): " << '\n';
+            cin >> cont;
             cont = toupper(cont);
             break;
         default:
-            std::cout << "There was an invalid operator." << '\n';
-            std::cout << "Do you want to continue?(Y/N): " << '\n';
-            std::cin >> cont;
+            cout << "There was an invalid operator." << '\n';
+            cout << "Do you want to continue?(Y/N): " << '\n';
+            cin >> cont;
             cont = toupper(cont);
             break;
 
     }} while(cont == 'Y');
 
-    std::cout << "******************************\n";
+    cout << "******************************\n";
 
     return 0;
 }
